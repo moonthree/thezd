@@ -1,4 +1,4 @@
-import { MatchInterface } from '../types/type';
+import { MatchInterface, MatchListInterface } from '../types/type';
 import { nexonApi } from './axiosConfig';
 
 export const getUserApi = (nickname: string) => {
@@ -10,7 +10,7 @@ export const getUserApi = (nickname: string) => {
 };
 
 export const getMatchListApi = (payload: MatchInterface) => {
-  const data = nexonApi.get(
+  const data: Promise<MatchListInterface> = nexonApi.get(
     `https://api.nexon.co.kr/fifaonline4/v1.0/users/${payload.accessId}/matches?matchtype=${payload.matchType}&offset=${payload.offset}&limit=${payload.limit}`,
   );
   console.log(data);

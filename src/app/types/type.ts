@@ -10,3 +10,7 @@ export interface MatchInterface {
   offset: number;
   limit: number;
 }
+
+export interface MatchListInterface {
+  data: string[];
+}

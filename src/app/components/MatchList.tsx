@@ -9,7 +9,7 @@ const MatchList = () => {
   const player = useRecoilValue(playerState);
   const limit = 10;
   const [offset, setOffset] = useState(0);
-  const [matches, setMatches] = useState([]);
+  const [matches, setMatches] = useState<string[]>([]);
 
   useEffect(() => {
     if (player.accessId === '') return;

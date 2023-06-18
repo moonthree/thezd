@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
 import { getMatchApi } from '../api/api';
 
-const MatchItem = ({ match }: string) => {
+interface MatchItemProps {
+  match: string;
+}
+
+const MatchItem = ({ match }: MatchItemProps) => {
   useEffect(() => {
     getMatch();
   }, []);
