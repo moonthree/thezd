@@ -13,8 +13,8 @@ export default function RootLayout({
       <head>
         <title>OPENER</title>
       </head>
-      <body>
-        <header className="">
+      <body className="bg-brandBg text-white">
+        <header>
           <Nav />
         </header>
         <RecoilRoot>{children}</RecoilRoot>

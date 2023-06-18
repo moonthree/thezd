@@ -13,8 +13,15 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        brandRed: '#FF0000',
-        brandBlue: '#0000FF',
+        brandBg: '#282c34',
+        brandText: '#abb2bf',
+        brandComment: '#98c379',
+        brandGreen: '#e5c07b',
+        brandPurple: '#c678dd',
+        brandRed: '#e06c75',
+        brandBlue: '#61afef',
+        brandYellow: '#e5c07b',
+        brandOrange: '#d19a66',
       },
       fontFamily: {
         brandNexon: ['NEXON Lv2 Gothic', 'sans-serif'],

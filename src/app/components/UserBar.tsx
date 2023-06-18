@@ -22,7 +22,7 @@ const UserBar = ({ param }: UserBarProps) => {
     }
   };
   return (
-    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 shadow p-10 m-3 rounded-xl">
+    <div className="bg-gradient-to-l from-brandPurple to-brandRed shadow p-10 m-3 rounded-xl">
       {player.nickname}
     </div>
   );
