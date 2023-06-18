@@ -14,9 +14,12 @@ const UserBar = ({ param }: UserBarProps) => {
     getUser();
   }, []);
   const getUser = async () => {
-    const res = await getUserApi(param);
-    setPlayer(res.data);
-    console.log(res);
+    try {
+      const res = await getUserApi(param);
+      setPlayer(res.data);
+    } catch (e) {
+      console.log(e);
+    }
   };
   return (
     <div className="bg-gradient-to-r from-cyan-500 to-blue-500 shadow p-10 m-3 rounded-xl">

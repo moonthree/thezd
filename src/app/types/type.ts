@@ -3,3 +3,10 @@ export interface PlayerInterface {
   level: number;
   nickname: string;
 }
+
+export interface MatchInterface {
+  accessId: string;
+  matchType: number;
+  offset: number;
+  limit: number;
+}
